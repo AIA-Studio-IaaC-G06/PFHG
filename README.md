@@ -19,13 +19,14 @@ You can find in this repository:
 ## What is this project about:
 
 Our intent was to explore an AI-related generative design method for a simple house, made of SIP, and give the user of the plugin/code the possibility to quickly predict a house that fits the user’s inputs of cost and time of construction and orientation of the house, serving as a better informed start point for designing the house. 
-
-## About the motivation:
-
 This project was created for the Studio Artificial Inteligence in Architecture from MaCAD program of 2021.
 The faculties of the Seminar were:
 * Angelos Chronis https://www.linkedin.com/in/achronis/
 * Lea Khairallah https://www.linkedin.com/in/achronis/
+
+## About the motivation:
+
+
 
 
  
@@ -43,6 +44,14 @@ Our project started from the exploration and comparison of different machine lea
 The Artificial Neural Network developed consists in a Sequential Model with 6 Dense Layers ran with Keras, in the Google Colaboratory environment, and is .  
 Through various experiments we could notice only a slight variation in the geometric results obtained while changing the model architecture by adding or reducing hidden layers in the neural network. Whereas, the variation in the number of epochs and batch sizes intensely affected the geometric result obtained.
 The predicted values in output are directly related to the size of the house, thermal data and energy consumption. In the final test result, these values were a little higher than the trained values, although our model has a good MSE(mean loss error). We conclude that this situation occurs due to the large number of irregular samples generated from the random facade. 
+
+## If you want to use the PFHF.AI 
+<details>
+           <summary> Learn how to here
+            </summary>
+           <p>
+</p>
+</details>            
 
 ## If you want to develope a similar Prefabricated House Generator for your own city 
 <details>
