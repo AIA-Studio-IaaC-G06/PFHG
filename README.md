@@ -73,15 +73,19 @@ Before start, inside your Python interface, choose the Python 3.8 interpreter, a
 
 
 This folder contains 3 files: 
-##### 1.machinelearning.py
-In this file you have to call your own .h5 file and pickle files. Call it from your own computer with the path.
+##### 1. machinelearning.py
+In this file you have to call your own .h5 file and .pickle files. Call it from your own computer by updating the path information.
 Make sure you have everything connected, and press run.
 
-##### 2.hops.py
+##### 2. hops.py
 In this file is where you will connect the PFHG.AI to the Hops component. For that we create the inputs and outputs expected to exist inside Grasshopper.  
 You don't need to change anything here, just press run.
 
-##### 3.Studio.gh
-This file you open in Grasshopper to 
+##### 3. Studio.gh
+This file you open in Grasshopper, find the Hops component - should be the one with the little grape drawing - clic with the right button, add the Path (xxxxx/runML).
+Make sure you uncheck the Cache options to always ensure the updated predictions.
+Connect the inputs /Construction Cost/,/Construction Time/ and /Rotation/ to the Hops Component, and extract the outputs. 
+
+
 
 For deeper development on the subject of this research, it is necessary that the dataset creation evolves in a direction of greater accuracy and clearer relationship, in order to enable the necessary feature correlation by the machine learning algorithm.
