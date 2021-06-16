@@ -91,8 +91,7 @@ This file you open in Grasshopper, find the Hops component - should be the one w
 Make sure you uncheck the Cache options to always ensure the updated predictions.
 Connect the inputs *Construction Cost*,*Construction Time* and *Rotation* to the Hops Component, and extract the outputs. 
 Connect the ouputs to the prefabricated panels creator to see the final result.
-
-            </p>
-         </details>
+</p>
+</details>
 
 For deeper development on the subject of this research, it is necessary that the dataset creation evolves in a direction of greater accuracy and clearer relationship, in order to enable the necessary feature correlation by the machine learning algorithm.
