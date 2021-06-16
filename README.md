@@ -54,11 +54,17 @@ The Artificial Neural Network developed consists in a Sequential Model with 6 De
 Through various experiments we could notice only a slight variation in the geometric results obtained while changing the model architecture by adding or reducing hidden layers in the neural network. Whereas, the variation in the number of epochs and batch sizes intensely affected the geometric result obtained.
 The predicted values in output are directly related to the size of the house, thermal data and energy consumption. In the final test result, these values were a little higher than the trained values, although our model has a good MSE(mean loss error). We conclude that this situation occurs due to the large number of irregular samples generated from the random facade. 
 
-## If you want to use the PFHF.AI 
+## If you want to use the PFHG.AI 
 <details>
            <summary> Learn how to here
             </summary>
            <p>
+
+To access the PFHG.AI, you can interact with it through the website (WIP).
+You should input your desired *Construction Cost*, *Construction Time*, and *Rotation of the house*, and see the final result in the format of a Catalogue House ai generated.
+Every time you change one of the inputs values, you get a new prediction, besides the bill of basic material costs, number of SIP panels, number of Windows, Daylight, Energy Consumption and others.
+Please, take into consideration that this is a research project trying to simulate what an automatic ai based design generator tool could look like for firms that either design a catalogue of houses, or fabricate them.
+
 </p>
 </details>            
 
