@@ -53,12 +53,24 @@ The predicted values in output are directly related to the size of the house, th
 </p>
 </details>            
 
+
+## If you want to build upon this work 
+
+For deeper development on the subject of this research, it is necessary that the data set creation evolves in a direction of greater accuracy and clearer relationship, in order to enable the necessary feature correlation by the machine learning algorithm. But also, we understand that high accuracy of prediction isn’t always guarantee of a good geometrical prediction. With that in mind, we beleive that next steps into this research could include:
+
+* Different training architectures
+* Different input and output relations
+* A simpler way to share the PFHG.AI
+
+  Other studies necessary are regarding the dissemination of this A.I. predictor.
+  We believe that the population with less access to computational knowledge and design tools would be the ones most benefited from the arrival of such a simplification of basic  design generator.
+  Having the hability to make an informed decision with minimun inputs for a house made of SIP could allow the 85% of the population that don't hire architects or enginners    today to have at decide on a prevalidated design and buy their own homes from a factory of pre fabricated houses.
+  
 ## If you want to develope a similar Prefabricated House Generator for your own city 
 <details>
            <summary> Learn how to here
             </summary>
            <p>
-
 
 For accurate predictions, the most important thing is to have the best fit possible data. In case of energy consumption and Daylight, this means running a whole new data set for the city desired. The way to do it is through Grasshopper, with the script shared in this repository - DataSetCreator. 
 Download the script, change the city climate file (you can find the one necessary here: https://www.ladybug.tools/epwmap/) and run the simulations until you have at least 2000 samples.
@@ -94,7 +106,6 @@ Before start, inside your Python interface, choose the Python 3.8 interpreter, a
 * pip3.8 install os
 * pip3.8 install sys
 
-
 This folder contains 3 files: 
 ##### 1. machinelearning.py
 In this file you have to call your own .h5 file and .pickle files. Call it from your own computer by updating the path information.
@@ -112,14 +123,3 @@ Connect the ouputs to the prefabricated panels creator to see the final result.
 </p>
 </details>
 
-## If you want to build upon this work 
-
-For deeper development on the subject of this research, it is necessary that the data set creation evolves in a direction of greater accuracy and clearer relationship, in order to enable the necessary feature correlation by the machine learning algorithm. But also, we understand that high accuracy of prediction isn’t always guarantee of a good geometrical prediction. With that in mind, we beleive that next steps into this research could include:
-
-* Different training architectures
-* Different input and output relations
-* A simpler way to share the PFHG.AI
-
-  Other studies necessary are regarding the dissemination of this A.I. predictor.
-  We believe that the population with less access to computational knowledge and design tools would be the ones most benefited from the arrival of such a simplification of basic  design generator.
-  Having the hability to make an informed decision with minimun inputs for a house made of SIP could allow the 85% of the population that don't hire architects or enginners    today to have at decide on a prevalidated design and buy their own homes from a factory of pre fabricated houses.
