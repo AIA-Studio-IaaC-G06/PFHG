@@ -26,8 +26,17 @@ The faculties of the Seminar were:
 
 ## About the motivation:
 
+Artificial Inteligence has been around for many years, but the AEC industry has not yet developed many pathways to apply it to the exercise of architecture design, construction and fabrication. 
+Besides that, many industries have been developing their proper way on how to deal with the predicting challenges, how to create/get data, organize it and properly train it.
+We as computational architects have the role to understand the tools already available in other industries e experiment the most we can on how to bring this kind of computation AI based power to the generative design, BIM and construction world, trying also somehow to close the technological gap between the AEC industry and others.
 
+It is well known that the Architecture and Construction Industry is lacking behind on productivity. According to a McKinsey Global Institute Report of 2017, the AEC's level of digitalization is smaller than the ones presented in the industries of Agriculture, Fishing and Hunting.  
 
+Besides this scenarium, a huge demand on habitat creation is approaching the cities in the next decade. Affordable, safe and sustainable houses have to be designed much faster, and for all the people who need it. 
+A research in Brazil, for example, from Instituto DataFolha, shows that 80 to 90% of the constructions in the country happens without the help either of architects or engineers, even though it's illegal.
+The professional work of the AEC industry is lacking to reach the most needed. 
+
+With that all in mind we wanted to develop a tool that could either be used by architects in the very beggining of a design phase, to be able to achieve fast and better informed decisions, or by the final user, in a possible approach of ordering simple houses for a construction factory.
 
  
 ## About the data set:
