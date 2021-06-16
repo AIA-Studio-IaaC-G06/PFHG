@@ -50,6 +50,9 @@ If you don't know how to analise and clean your dataset, a good place to start i
 After you clean your dataset, and train your model, you should save the predictor as an .h5 file, which you can do by following the steps on the notebook.
 Download this .h5 file, and also the .pickle files created during the steps of training, to be used in the next steps. 
 
+## Bringing the PFHG.AI back to Grasshopper 
+
+#### The HOPS component
 
 
 For deeper development on the subject of this research, it is necessary that the dataset creation evolves in a direction of greater accuracy and clearer relationship, in order to enable the necessary feature correlation by the machine learning algorithm.
