@@ -6,7 +6,7 @@ This repository is intended to disseminate the content developed through the cou
 
 You can find in this repository:
 
-1. The dataset developed in Grasshopper and encoded to be then trained as a neural network
+1. The data set developed in Grasshopper and encoded to be then trained as a neural network
 
 2. The Python codes used to train the neural network for predicting the values
 
@@ -59,7 +59,11 @@ In this repository you can find and download a folder to access directly from wi
 
 Make sure you have the best fit python to deal with Hops by now (3.8), and also pip installed in your computer. Find it https://www.python.org/downloads/release/python-3810/ and https://pypi.org/project/pip/.
 
-Before start, inside your Python interface, run these lines of code in the terminal to install the libraries necessary: 
+Before start, inside your Python interface, choose the Python 3.8 interpreter, and run these lines of code in the terminal to install the libraries necessary: 
+Markup : * pip3.8 install flask
+         * pip3.8 install ghhops_server
+         
+         
 ###### pip3.8 install flask
 ###### pip3.8 install ghhops_server
 ###### pip3.8 install rhino3dm
@@ -78,7 +82,7 @@ Make sure you have everything connected, and press run.
 
 ##### hops.py
 In this file is where you will connect the PFHG.AI to the Hops component. For that we create the inputs and outputs expected to exist inside Grasshopper.  
-
+You don't need to change anything here, just press run.
 
 ##### Studio.gh
 This file you open in Grasshopper to 
