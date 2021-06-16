@@ -6,11 +6,15 @@ This repository is intended to disseminate the content developed through the cou
 
 You can find in this repository:
 
-The dataset developed in Grasshopper and encoded to be then trained as a neural network
-The Python codes used to train the neural network for predicting the values
-The Python codes used to connect the artificial intelligence model with the Grasshopper
-The GH scripts for generating new houses from the predictions of the artificial intelligence model
-The Human UI interface that allows for exploring the results of the developed Neural Network
+1. The dataset developed in Grasshopper and encoded to be then trained as a neural network
+
+2. The Python codes used to train the neural network for predicting the values
+
+3. The Python codes used to connect the artificial intelligence model with the Grasshopper
+
+4. The GH scripts for generating new houses from the predictions of the artificial intelligence model
+
+5. The Human UI interface that allows for exploring the results of the developed Neural Network
 
 ## What is this project about:
 
