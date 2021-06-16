@@ -35,7 +35,12 @@ The Artificial Neural Network developed consists in a Sequential Model with 6 De
 Through various experiments we could notice only a slight variation in the geometric results obtained while changing the model architecture by adding or reducing hidden layers in the neural network. Whereas, the variation in the number of epochs and batch sizes intensely affected the geometric result obtained.
 The predicted values in output are directly related to the size of the house, thermal data and energy consumption. In the final test result, these values were a little higher than the trained values, although our model has a good MSE(mean loss error). We conclude that this situation occurs due to the large number of irregular samples generated from the random facade. 
 
-## If you want to develope a similar Prefabricated House Generator for your own city
+## If you want to develope a similar Prefabricated House Generator for your own city 
+<details>
+           <summary> Learn how to here
+            </summary>
+           <p>
+
 
 For accurate predictions, the most important thing is to have the best fit possible data. In case of energy consumption and Daylight, this means running a whole new data set for the city desired. The way to do it is through Grasshopper, with the script shared in this repository - DataSetCreator. 
 Download the script, change the city climate file (you can find the one necessary here: https://www.ladybug.tools/epwmap/) and run the simulations until you have at least 2000 samples.
@@ -84,8 +89,9 @@ You don't need to change anything here, just press run.
 ##### 3. Studio.gh
 This file you open in Grasshopper, find the Hops component - should be the one with the little grape drawing - clic with the right button, add the Path (xxxxx/runML).
 Make sure you uncheck the Cache options to always ensure the updated predictions.
-Connect the inputs /Construction Cost/,/Construction Time/ and /Rotation/ to the Hops Component, and extract the outputs. 
-
-
+Connect the inputs *Construction Cost*,*Construction Time* and *Rotation* to the Hops Component, and extract the outputs. 
+Connect the ouputs to the prefabricated panels creator to see the final result.
+</p>
+</details>
 
 For deeper development on the subject of this research, it is necessary that the dataset creation evolves in a direction of greater accuracy and clearer relationship, in order to enable the necessary feature correlation by the machine learning algorithm.
