@@ -63,29 +63,25 @@ Before start, inside your Python interface, choose the Python 3.8 interpreter, a
 
 * pip3.8 install flask
 * pip3.8 install ghhops_server
-         
-         
-###### pip3.8 install flask
-###### pip3.8 install ghhops_server
-###### pip3.8 install rhino3dm
-###### pip3.8 install numpy
-###### pip3.8 install tensorflow
-###### pip3.8 install pickle
-###### pip3.8 install joblib
-###### pip3.8 install os
-###### pip3.8 install sys
+* pip3.8 install rhino3dm
+* pip3.8 install numpy
+* pip3.8 install tensorflow
+* pip3.8 install pickle
+* pip3.8 install joblib
+* pip3.8 install os
+* pip3.8 install sys
 
 
 This folder contains 3 files: 
-##### machinelearning.py
+##### 1.machinelearning.py
 In this file you have to call your own .h5 file and pickle files. Call it from your own computer with the path.
 Make sure you have everything connected, and press run.
 
-##### hops.py
+##### 2.hops.py
 In this file is where you will connect the PFHG.AI to the Hops component. For that we create the inputs and outputs expected to exist inside Grasshopper.  
 You don't need to change anything here, just press run.
 
-##### Studio.gh
+##### 3.Studio.gh
 This file you open in Grasshopper to 
 
 For deeper development on the subject of this research, it is necessary that the dataset creation evolves in a direction of greater accuracy and clearer relationship, in order to enable the necessary feature correlation by the machine learning algorithm.
