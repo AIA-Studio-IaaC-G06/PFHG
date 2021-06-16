@@ -38,7 +38,18 @@ The predicted values in output are directly related to the size of the house, th
 ## If you want to develope a similar Prefabricated house generator for your own city
 
 For accurate predictions, the most important thing is to have the best fit possible data. In case of energy consumption and Daylight, this means running a whole new data set for the city desired. The way to do it is through Grasshopper, with the script shared in this repository - DataSetCreator. 
-#### Download the script, change the city clime file (you can find the one necessary here: https://www.ladybug.tools/epwmap/) and run the simulations until you have at least 2000 samples.
+#### Download the script, change the city climate file (you can find the one necessary here: https://www.ladybug.tools/epwmap/) and run the simulations until you have at least 2000 samples.
+
+## Train your own PFHG.AI
+
+With your data set prepared, you have to train it. You can download the Google Colab Notebook shared in this repository (Colab allows you to combine executable code and rich text in a single document).
+
+Through Google Drive you can access the Notebook, call your data set, analise it and train the model. More information on how to train the model can be found inside the Notebook. It's important to be sure that there are no mistakes within the dataset such as uneven distributed numbers, missing information or unrepresentative numbers.
+If you don't know how to analise and clean your dataset, a good place to start is here: https://colab.research.google.com/github/adelnehme/cleaning-data-in-python-live-training/blob/master/Cleaning_Data_in_Python_live_session.ipynb
+
+After you clean your dataset, and train your model, you should save the predictor as an .h5 file, which you can do by following the steps on the notebook.
+Download this .h5 file, and also the .pickle files created during the steps of training, to be used in the next steps. 
+
 
 
 For deeper development on the subject of this research, it is necessary that the dataset creation evolves in a direction of greater accuracy and clearer relationship, in order to enable the necessary feature correlation by the machine learning algorithm.
