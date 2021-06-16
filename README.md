@@ -19,6 +19,15 @@ You can find in this repository:
 ## What is this project about:
 
 Our intent was to explore an AI-related generative design method for a simple house, made of SIP, and give the user of the plugin/code the possibility to quickly predict a house that fits the user’s inputs of cost and time of construction and orientation of the house, serving as a better informed start point for designing the house. 
+
+## About the motivation:
+
+This project was created for the Studio Artificial Inteligence in Architecture from MaCAD program of 2021.
+The faculties of the Seminar were:
+* Angelos Chronis https://www.linkedin.com/in/achronis/
+* Lea Khairallah https://www.linkedin.com/in/achronis/
+
+
  
 ## About the data set:
 
