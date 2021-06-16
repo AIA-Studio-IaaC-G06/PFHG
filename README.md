@@ -35,7 +35,7 @@ The Artificial Neural Network developed consists in a Sequential Model with 6 De
 Through various experiments we could notice only a slight variation in the geometric results obtained while changing the model architecture by adding or reducing hidden layers in the neural network. Whereas, the variation in the number of epochs and batch sizes intensely affected the geometric result obtained.
 The predicted values in output are directly related to the size of the house, thermal data and energy consumption. In the final test result, these values were a little higher than the trained values, although our model has a good MSE(mean loss error). We conclude that this situation occurs due to the large number of irregular samples generated from the random facade. 
 
-## If you want to develope a similar Prefabricated house generator for your own city
+## If you want to develope a similar Prefabricated House Generator for your own city
 
 For accurate predictions, the most important thing is to have the best fit possible data. In case of energy consumption and Daylight, this means running a whole new data set for the city desired. The way to do it is through Grasshopper, with the script shared in this repository - DataSetCreator. 
 Download the script, change the city climate file (you can find the one necessary here: https://www.ladybug.tools/epwmap/) and run the simulations until you have at least 2000 samples.
@@ -57,16 +57,30 @@ Hops is a component for Grasshopper in Rhino 7 for Windows. Hops adds external f
 
 In this repository you can find and download a folder to access directly from within Visual Studio Code, for example, or any other python interface, and build the Hops component for your own PFHD.AI.
 
-Make sure you have the best fit python to deal with Hops by now (3.8), and also pip installed in your computer.
+Make sure you have the best fit python to deal with Hops by now (3.8), and also pip installed in your computer. Find it https://www.python.org/downloads/release/python-3810/ and https://pypi.org/project/pip/.
 
-Before start, inside your Python interface, run this lines of code to install the libraries necessary 
+Before start, inside your Python interface, run these lines of code in the terminal to install the libraries necessary: 
 ###### pip3.8 install flask
-###### pip3.8 install flask
+###### pip3.8 install ghhops_server
+###### pip3.8 install rhino3dm
+###### pip3.8 install numpy
+###### pip3.8 install tensorflow
+###### pip3.8 install pickle
+###### pip3.8 install joblib
+###### pip3.8 install os
+###### pip3.8 install sys
+
 
 This folder contains 3 files: 
-##### hops.py
-      
 ##### machinelearning.py
+In this file you have to call your own .h5 file and pickle files. Call it from your own computer with the path.
+Make sure you have everything connected, and press run.
+
+##### hops.py
+In this file is where you will connect the PFHG.AI to the Hops component. For that we create the inputs and outputs expected to exist inside Grasshopper.  
+
+
 ##### Studio.gh
+This file you open in Grasshopper to 
 
 For deeper development on the subject of this research, it is necessary that the dataset creation evolves in a direction of greater accuracy and clearer relationship, in order to enable the necessary feature correlation by the machine learning algorithm.
