@@ -53,6 +53,16 @@ Download this .h5 file, and also the .pickle files created during the steps of t
 ## Bringing the PFHG.AI back to Grasshopper 
 
 #### The HOPS component
+Hops is a component for Grasshopper in Rhino 7 for Windows. Hops adds external functions to Grasshopper, like other programming languages, in our case Python with some libraries.
 
+In this repository you can find and download a folder to access directly from within Visual Studio Code, for example, or any other python interface, and build the Hops component for your own PFHD.AI.
+Before start, inside your Python interface, install the libraries necessary:
+######
+
+This folder contains 3 files: 
+##### hops.py
+      
+##### machinelearning.py
+##### Studio.gh
 
 For deeper development on the subject of this research, it is necessary that the dataset creation evolves in a direction of greater accuracy and clearer relationship, in order to enable the necessary feature correlation by the machine learning algorithm.
