@@ -56,8 +56,12 @@ Download this .h5 file, and also the .pickle files created during the steps of t
 Hops is a component for Grasshopper in Rhino 7 for Windows. Hops adds external functions to Grasshopper, like other programming languages, in our case Python with some libraries.
 
 In this repository you can find and download a folder to access directly from within Visual Studio Code, for example, or any other python interface, and build the Hops component for your own PFHD.AI.
-Before start, inside your Python interface, install the libraries necessary:
-######
+
+Make sure you have the best fit python to deal with Hops by now (3.8), and also pip installed in your computer.
+
+Before start, inside your Python interface, run this lines of code to install the libraries necessary 
+###### pip3.8 install flask
+###### pip3.8 install flask
 
 This folder contains 3 files: 
 ##### hops.py
