@@ -16,9 +16,28 @@ You can find in this repository:
 
 5. The Human UI interface that allows for exploring the results of the developed Neural Network
 
-## What is this project about:
+## What this project is about:
 
 Our intent was to explore an AI-related generative design method for a simple house, made of SIP, and give the user of the plugin/code the possibility to quickly predict a house that fits the user’s inputs of cost and time of construction and orientation of the house, serving as a better informed start point for designing the house. 
+This project was created for the Studio Artificial Inteligence in Architecture from MaCAD program of 2021.
+The faculties of the Seminar were:
+* Angelos Chronis https://www.linkedin.com/in/achronis/
+* Lea Khairallah https://www.linkedin.com/in/achronis/
+
+## About the motivation:
+
+Artificial Inteligence has been around for many years, but the AEC industry has not yet developed many pathways to apply it to the exercise of architecture design, construction and fabrication. 
+Besides that, many industries have been developing their proper way on how to deal with the predicting challenges, how to create/get data, organize it and properly train it.
+We as computational architects have the role to understand the tools already available in other industries e experiment the most we can on how to bring this kind of computation AI based power to the generative design, BIM and construction world, trying also somehow to close the technological gap between the AEC industry and others.
+
+It is well known that the Architecture and Construction Industry is lacking behind on productivity. According to a McKinsey Global Institute Report of 2017, the AEC's level of digitalization is smaller than the ones presented in the industries of Agriculture, Fishing and Hunting.  
+
+Besides this scenarium, a huge demand on habitat creation is approaching the cities in the next decade. Affordable, safe and sustainable houses have to be designed much faster, and for all the people who need it. 
+A research in Brazil, for example, from Instituto DataFolha, shows that 80 to 90% of the constructions in the country happens without the help either of architects or engineers, even though it's illegal.
+The professional work of the AEC industry is lacking to reach the most needed. 
+
+With that all in mind we wanted to develop a tool that could either be used by architects in the very beggining of a design phase, to be able to achieve fast and better informed decisions, or by the final user, in a possible approach of ordering simple houses for a construction factory.
+
  
 ## About the data set:
 
@@ -35,17 +54,43 @@ The Artificial Neural Network developed consists in a Sequential Model with 6 De
 Through various experiments we could notice only a slight variation in the geometric results obtained while changing the model architecture by adding or reducing hidden layers in the neural network. Whereas, the variation in the number of epochs and batch sizes intensely affected the geometric result obtained.
 The predicted values in output are directly related to the size of the house, thermal data and energy consumption. In the final test result, these values were a little higher than the trained values, although our model has a good MSE(mean loss error). We conclude that this situation occurs due to the large number of irregular samples generated from the random facade. 
 
+## If you want to use the PFHG.AI 
+<details>
+           <summary> Learn how to here
+            </summary>
+           <p>
+
+To access the PFHG.AI, you can interact with it through the website (WIP).
+You should input your desired *Construction Cost*, *Construction Time*, and *Rotation of the house*, and see the final result in the format of a Catalogue House ai generated.
+Every time you change one of the inputs values, you get a new prediction, besides the bill of basic material costs, number of SIP panels, number of Windows, Daylight, Energy Consumption and others.
+Please, take into consideration that this is a research project trying to simulate what an automatic ai based design generator tool could look like for firms that either design a catalogue of houses, or fabricate them.
+
+</p>
+</details>            
+
+
+## If you want to build upon this work 
+
+For deeper development on the subject of this research, it is necessary that the data set creation evolves in a direction of greater accuracy and clearer relationship, in order to enable the necessary feature correlation by the machine learning algorithm. But also, we understand that high accuracy of prediction isn’t always guarantee of a good geometrical prediction. With that in mind, we beleive that next steps into this research could include:
+
+* Different training architectures
+* Different input and output relations
+* A simpler way to share the PFHG.AI
+
+  Other studies necessary are regarding the dissemination of this A.I. predictor.
+  We believe that the population with less access to computational knowledge and design tools would be the ones most benefited from the arrival of such a simplification of basic  design generator.
+  Having the hability to make an informed decision with minimun inputs for a house made of SIP could allow the 85% of the population that don't hire architects or enginners    today to have at decide on a prevalidated design and buy their own homes from a factory of pre fabricated houses.
+  
 ## If you want to develope a similar Prefabricated House Generator for your own city 
 <details>
            <summary> Learn how to here
             </summary>
            <p>
 
-
 For accurate predictions, the most important thing is to have the best fit possible data. In case of energy consumption and Daylight, this means running a whole new data set for the city desired. The way to do it is through Grasshopper, with the script shared in this repository - DataSetCreator. 
 Download the script, change the city climate file (you can find the one necessary here: https://www.ladybug.tools/epwmap/) and run the simulations until you have at least 2000 samples.
 
-## Train your own PFHG.AI
+## Training your own PFHG.AI
 
 With your data set prepared, you have to train it. You can download the Google Colab Notebook shared in this repository (Colab allows you to combine executable code and rich text in a single document).
 
@@ -76,7 +121,6 @@ Before start, inside your Python interface, choose the Python 3.8 interpreter, a
 * pip3.8 install os
 * pip3.8 install sys
 
-
 This folder contains 3 files: 
 ##### 1. machinelearning.py
 In this file you have to call your own .h5 file and .pickle files. Call it from your own computer by updating the path information.
@@ -94,14 +138,3 @@ Connect the ouputs to the prefabricated panels creator to see the final result.
 </p>
 </details>
 
-## If you want to build upon this work 
-
-For deeper development on the subject of this research, it is necessary that the data set creation evolves in a direction of greater accuracy and clearer relationship, in order to enable the necessary feature correlation by the machine learning algorithm. But also, we understand that high accuracy of prediction isn’t always guarantee of a good geometrical prediction. With that in mind, we beleive that next steps into this research could include:
-
-* Different training architectures
-* Different input and output relations
-* A simpler way to share the PFHG.AI
-
-  Other studies necessary are regarding the dissemination of this A.I. predictor.
-  We believe that the population with less access to computational knowledge and design tools would be the ones most benefited from the arrival of such a simplification of basic  design generator.
-  Having the hability to make an informed decision with minimun inputs for a house made of SIP could allow the 85% of the population that don't hire architects or enginners    today to have at decide on a prevalidated design and buy their own homes from a factory of pre fabricated houses.
