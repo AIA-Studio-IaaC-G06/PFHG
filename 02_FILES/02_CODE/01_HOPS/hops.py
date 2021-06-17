@@ -17,14 +17,14 @@ app = Flask(__name__)
 hops = hs.Hops(app)
 
 @hops.component(
-    "/runML3",
-    name="runML3",
+    "/runML11",
+    name="runML11",
     description="Run Machine Learning prediction",
     icon="examples/pointat.png",
     inputs=[
+        hs.HopsNumber("Construction Time", "Time", "Construction Time"),
         hs.HopsNumber("Construction Cost", "Cost", "Construction Cost"),
         hs.HopsNumber("Rotation angle from North", "Rotation", "Rotation Angle"),
-        hs.HopsNumber("Construction Time", "Time", "Construction Time"),
     ],
     outputs=[
         hs.HopsNumber("Length X", "X", "Length X"),
@@ -35,8 +35,14 @@ hops = hs.Hops(app)
         hs.HopsNumber("Total Electricity consumption", "Electricity", "Total Electricity Consumption"),
         hs.HopsNumber("Light Electricity consumption", "Light", "Light Electricity Consumption"),
         hs.HopsNumber("Cooling Electricity consumption", "Cooling", "Cooling Electricity Consumption"),
-        hs.HopsNumber("Heating Electricity consumption", "Heating", "Heating Electricity Consumption")
-    ]
+        hs.HopsNumber("Heating Electricity consumption", "Heating", "Heating Electricity Consumption"),
+        hs.HopsNumber("TerraceCost", "TerraceCost", "TerraceCost"),
+        hs.HopsNumber("WindowCost", "WindowCost", "WindowCost"),
+        hs.HopsNumber("FacadeCost", "FacadeCost", "FacadeCost"),
+        hs.HopsNumber("InteriorCost", "InteriorCost", "InteriorCost"),
+        hs.HopsNumber("Colormesh", "Colormesh", "Colormesh",hs.HopsParamAccess.LIST)
+
+      ]
 )
 
 def runml(a,b,c):

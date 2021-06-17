@@ -34,6 +34,6 @@ def runml(a,b,c):
     final_pred = predictions[0]
     print(flat_list)
 
-    return flat_list[0], flat_list[1],flat_list[2],flat_list[3],flat_list[4],flat_list[5],flat_list[6],flat_list[7], flat_list[8]
+    return flat_list[0], flat_list[1],flat_list[2],flat_list[3],flat_list[4],flat_list[5],flat_list[6],flat_list[7], flat_list[8], flat_list[9],flat_list[10],flat_list[11], flat_list[12], flat_list[13:]
 
 #To debug, look at Test2
