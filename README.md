@@ -1,5 +1,5 @@
 # PFHG.AI
-Prefabricated Home Generator with Artificial Inteligence
+Prefabricated Home Generator with Artificial Intelligence
 
 
 This repository is intended to disseminate the content developed through the course of the Studio seminar Artificial Intelligence in Architecture for the MaCAD program of IaaC in 2021.
